@@ -37,10 +37,26 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 nmap <leader>T :enew<cr>
 " Move to the next buffer
 nmap <leader>l :bnext<CR>
+nmap <leader>] :bnext<CR>
 " Move to the previous buffer
 nmap <leader>h :bprevious<CR>
+nmap <leader>[ :bprevious<CR>
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <leader>bq :bp <BAR> bd #<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+
+"""""""""""""
+" SYNTACTIC "
+"""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['flake8', 'pyflakes', 'pylint', 'python']
+let g:syntastic_javascript_checkers = ['eslint']
