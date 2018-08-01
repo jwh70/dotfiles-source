@@ -4,6 +4,12 @@ filetype plugin indent on
 set background=dark
 colorscheme gruvbox
 
+
+""""""""""""
+" NerdTree " 
+""""""""""""
+autocmd vimenter * NERDTree
+
 """""""""""
 " Control P 
 """""""""""
