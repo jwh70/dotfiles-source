@@ -5,5 +5,7 @@
 
 ## To Start
 ```
+cd ~
 mv dotfiles-source/* dotfiles-source/.* .
+ln -s ~/.vim/vimrc ~/.vimrcln -s ~/.vim/vimrc
 ```
