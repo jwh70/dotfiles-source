@@ -3,12 +3,21 @@ syntax on
 filetype plugin indent on
 set background=dark
 colorscheme gruvbox
+set number
 
+" Source vimrc
+nmap <leader>src :so ~/.vim/vimrc<cr>
+" Switch windows
+nnoremap <Leader>1 <C-w>p
+nnoremap <Leader>2 <C-w>w
+" set wildignore+=.git,**/libs/**,**/lib/**,**/swagger/**,**/vendor/**,**/jquery/**,**/django_summernote/**,**/assets/**,**/node_modules"
 
 """"""""""""
 " NerdTree " 
 """"""""""""
 autocmd vimenter * NERDTree
+nmap <leader>nt :NERDTreeToggle<cr>
+nmap <leader>st :NERDTreeFind<cr>
 
 """""""""""
 " Control P 
@@ -66,3 +75,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8', 'pyflakes', 'pylint', 'python']
 let g:syntastic_javascript_checkers = ['eslint']
+set runtimepath^=~/.vim/bundle/ag
