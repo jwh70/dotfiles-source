@@ -110,7 +110,7 @@ cdev(){
 alias npm-exec='PATH=$(npm bin):$PATH'
 
 q(){
-    cd /Users/jackharris/quorum-new/quorum-site/;
+    cd /Users/jackharris/quorum/quorum-site/;
     source ../bin/activate quorum;
     npm-exec
     clear;
@@ -138,7 +138,7 @@ servep(){
 }
 
 oq(){
-    subl /Users/jackharris/quorum-new/quorum-site/; 
+    subl /Users/jackharris/quorum/quorum-site/; 
 }
 
 # place bin in path
