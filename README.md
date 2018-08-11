@@ -5,7 +5,7 @@
 
 ## To Start
 ```
-cd ~
+cd
 git clone git@github.com:jwh70/dotfiles-source.git
 mv dotfiles-source/* dotfiles-source/.* .
 ln -s ~/.vim/vimrc ~/.vimrcln -s ~/.vim/vimrc
