@@ -1,9 +1,6 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-set background=dark
-colorscheme gruvbox
-set number
 
 " Start plugin manager
 call plug#begin('~/.vim/plugged')
@@ -11,6 +8,10 @@ Plug 'morhetz/gruvbox'
 Plug 'ctrlpvim/ctrlp.vim'
 " Add plugins to &runtimepath
 call plug#end()
+
+set background=dark
+colorscheme gruvbox
+set number
 
 " Source vimrc
 nmap <leader>src :so ~/.vim/vimrc<cr>
