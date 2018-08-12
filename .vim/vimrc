@@ -10,6 +10,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-sensible'
 Plug 'kchmck/vim-coffee-script', { 'for': ['coffee'] }
 Plug 'vim-syntastic/syntastic'
+Plug 'chase/vim-ansible-yaml'
 " Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 " Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 " Plug 'heavenshell/vim-jsdoc', { 'for': ['javascript', 'javascript.jsx'] }
