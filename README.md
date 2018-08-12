@@ -1,6 +1,8 @@
 ## To Start
 ```
-cd ~/ 
+cd ~/
+
+# Clone the Repo
 git clone git@github.com:jwh70/dotfiles-source.git
 mv dotfiles-source/* dotfiles-source/.* .
 
