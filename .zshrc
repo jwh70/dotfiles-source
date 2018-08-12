@@ -95,3 +95,52 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+cprod(){
+    pkill -f ssh;
+    ssh -fnN db-quorum-prod;
+}
+ cdev(){
+    pkill -f ssh;
+    ssh -fnN db-quorum-dev;
+}
+ alias npm-exec='PATH=$(npm bin):$PATH'
+ q(){
+    cd /Users/jackharris/quorum/quorum-site/;
+    source ../bin/activate quorum;
+    npm-exec
+    clear;
+}
+ qm(){
+    q
+    cd QuorumMobile
+}
+ sp(){
+    python manage.py shell_plus --run_local
+}
+ psp(){
+    python manage.py shell_plus --run_local --use_prod_db
+}
+ serve(){
+    python manage.py runserver --run_local
+}
+ servep(){
+    python manage.py runserver --run_local --use_prod_db
+}
+ oq(){
+    subl /Users/jackharris/quorum/quorum-site/;
+}
+ # place bin in path
+export PATH=$PATH:$HOME/bin
+ #variables for react native ANDROID_HOME
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+ # opens Android dev tools
+atools(){
+    adb shell input keyevent 82
+}
+ # Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+# PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+# export PATH
