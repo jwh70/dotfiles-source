@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias tmux="TERM=screen-256color-bce tmux"
+
 cprod(){
     pkill -f ssh;
     ssh -fnN db-quorum-prod;
