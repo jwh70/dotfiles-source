@@ -15,5 +15,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 rm ~/.zshrc
 ln -s ~/.zsh/.zshrc ~/.zshrc
 
+# Zsh
+sudo apt-get install tmux
+ln -s ~/.tmux/.tmux.conf .tmux.conf
+
 rm -rf dotfiles-source/
 ```
