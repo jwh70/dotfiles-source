@@ -1,6 +1,8 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+set background=dark
+set number
 
 " Start plugin manager
 call plug#begin('~/.vim/plugged')
@@ -11,27 +13,24 @@ Plug 'tpope/vim-sensible'
 Plug 'kchmck/vim-coffee-script', { 'for': ['coffee'] }
 Plug 'vim-syntastic/syntastic'
 Plug 'chase/vim-ansible-yaml'
-" Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
-" Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
-" Plug 'heavenshell/vim-jsdoc', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
-" Autocompletion
 Plug 'ervandew/supertab'
 Plug 'rking/ag.vim' 
 " Add plugins to &runtimepath
 call plug#end()
 
-set background=dark
+" Color Scheme
 colorscheme gruvbox
-set number
 
 " Source vimrc
 nmap <leader>src :so ~/.vim/vimrc<cr>
-" Switch windows
-nnoremap <Leader>1 <C-w>p
-nnoremap <Leader>2 <C-w>w
-" set wildignore+=.git,**/libs/**,**/lib/**,**/swagger/**,**/vendor/**,**/jquery/**,**/django_summernote/**,**/assets/**,**/node_modules"
+
+" Kill some bad habits
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 """"""""""""""""""""""""
 " * Built in Toggles * "
@@ -60,16 +59,7 @@ set number 		        " show line nums
 set showcmd 		    " show last entered command
 set showmatch 		    " show matching ()
 set wildmenu            " visual autocomplete for command menu
-
-" UI Settings if nvim isn't running
 set mouse=a             " Turn on mouse mode
-if !has('nvim')
-    set ttymouse=xterm2
-endif
-
-"""""""""""""""""
-" Autuocomplete " 
-"""""""""""""""""
 
 """"""""""""
 " NerdTree " 
@@ -111,18 +101,13 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 nmap <leader>T :enew<cr>
 " Move to the next buffer
 nmap <Tab> :bnext<CR>
-nmap <S-Tab> :bprevious<CR>
-" nmap <leader>l :bnext<CR>
-" nmap <leader>] :bnext<CR>
 " " Move to the previous buffer
-" nmap <leader>h :bprevious<CR>
-" nmap <leader>[ :bprevious<CR>
+nmap <S-Tab> :bprevious<CR>
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <leader>bq :bp <BAR> bd #<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
-
 
 """""""""""""
 " SYNTACTIC "
