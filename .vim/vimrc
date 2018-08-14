@@ -16,6 +16,8 @@ Plug 'chase/vim-ansible-yaml'
 " Plug 'heavenshell/vim-jsdoc', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
+" Autocompletion
+Plug 'ervandew/supertab'
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -58,12 +60,15 @@ set showcmd 		    " show last entered command
 set showmatch 		    " show matching ()
 set wildmenu            " visual autocomplete for command menu
 
-
 " UI Settings if nvim isn't running
 set mouse=a             " Turn on mouse mode
 if !has('nvim')
     set ttymouse=xterm2
 endif
+
+"""""""""""""""""
+" Autuocomplete " 
+"""""""""""""""""
 
 """"""""""""
 " NerdTree " 
