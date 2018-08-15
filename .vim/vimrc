@@ -17,6 +17,7 @@ Plug 'wavded/vim-stylus', { 'for': 'stylus' }
 Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'ervandew/supertab'
 Plug 'rking/ag.vim' 
+Plug 'tpope/vim-fugitive'
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -76,7 +77,7 @@ nmap <leader>st :NERDTreeFind<cr>
 """""""""""
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Setup some default ignores
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git' 
+let g:ctrlp_custom_ignore = '\v[\/](codecoverage|Pods|node_modules|DS_Store|git|assets|admin|cc|django_summernote|swagger|libs|lib|bundles|dist|build|Build|cc|bundled|mobile-bundles)|(\.(swp|pbxuser|mode1v3|mode2v3|perspectivev3|xccheckout|hmap|ipa|xcuserstate|coverage|pyc|txt|dat|log|save|bat|xml|pem|csv|rst|css|ico|git|svn|pbxuser|mode1v3|mode2v3|xccheckout|hmap|ipa|xcuserstate|woff|pdf))$'
 " Use the nearest .git directory as the cwd
 " This makes a lot of sense if you are working on a project that is in version
 " control. It also supports works with .svn, .hg, .bzr.
