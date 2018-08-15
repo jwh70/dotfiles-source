@@ -24,7 +24,7 @@ call plug#end()
 colorscheme gruvbox
 
 " Map leader
-let mapleader = ","
+" let mapleader = ","
 
 " Source vimrc
 nmap <leader>src :so ~/.vim/vimrc<cr>
