@@ -120,19 +120,19 @@ cprod(){
     q
     cd QuorumMobile
 }
- sp(){
+sp(){
     python manage.py shell_plus --run_local
 }
- psp(){
+psp(){
     python manage.py shell_plus --run_local --use_prod_db
 }
- serve(){
+serve(){
     python manage.py runserver --run_local
 }
- servep(){
+servep(){
     python manage.py runserver --run_local --use_prod_db
 }
- oq(){
+oq(){
     subl /Users/jackharris/quorum/quorum-site/;
 }
  # place bin in path
@@ -149,3 +149,5 @@ atools(){
 # The original version is saved in .bash_profile.pysave
 # PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 # export PATH
+
+alias estunnel='ssh -Nnf estunnel'
