@@ -121,16 +121,16 @@ cprod(){
     cd QuorumMobile
 }
 sp(){
-    python manage.py shell_plus --run_local
+    python manage.py shell_plus --run_local --use_prod_aws
 }
 psp(){
-    python manage.py shell_plus --run_local --use_prod_db
+    python manage.py shell_plus --run_local --use_prod_db --use_prod_aws
 }
 serve(){
-    python manage.py runserver --run_local
+    python manage.py runserver --run_local --use_prod_aws
 }
 servep(){
-    python manage.py runserver --run_local --use_prod_db
+    python manage.py runserver --run_local --use_prod_db --use_prod_aws
 }
 oq(){
     subl /Users/jackharris/quorum/quorum-site/;
