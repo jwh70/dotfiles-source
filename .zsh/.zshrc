@@ -132,6 +132,12 @@ serve(){
 servep(){
     python manage.py runserver --run_local --use_prod_db --use_prod_aws
 }
+dbshell(){
+    python manage.py dbshell
+}
+dbshellp(){
+    python manage.py dbshell --use_prod_db
+}
 oq(){
     subl /Users/jackharris/quorum/quorum-site/;
 }
