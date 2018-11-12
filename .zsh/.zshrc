@@ -121,10 +121,10 @@ cprod(){
     cd QuorumMobile
 }
 sp(){
-    python manage.py shell_plus --run_local --use_prod_aws
+    python manage.py shell_plus --run_local --use_prod_aws --print-sql
 }
 psp(){
-    python manage.py shell_plus --run_local --use_prod_db --use_prod_aws
+    python manage.py shell_plus --run_local --use_prod_db --use_prod_aws --print-sql
 }
 serve(){
     python manage.py runserver --run_local --use_prod_aws
