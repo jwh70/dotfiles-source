@@ -20,6 +20,7 @@ Plug 'rking/ag.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'nvie/vim-flake8'
 " Add plugins to &runtimepath
 call plug#end()
 
