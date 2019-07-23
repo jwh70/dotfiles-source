@@ -21,6 +21,8 @@ Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
 Plug 'ervandew/supertab'
 Plug 'rking/ag.vim' 
 Plug 'tpope/vim-fugitive'
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'nvie/vim-flake8'
 Plug 'davidhalter/jedi-vim'
 " Add plugins to &runtimepath
