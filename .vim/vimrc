@@ -4,6 +4,9 @@ filetype plugin indent on
 set background=dark
 set number
 
+" Spellchecking!
+set spell spelllang=en_us
+
 " Start plugin manager
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
@@ -19,6 +22,7 @@ Plug 'ervandew/supertab'
 Plug 'rking/ag.vim' 
 Plug 'tpope/vim-fugitive'
 Plug 'nvie/vim-flake8'
+Plug 'davidhalter/jedi-vim'
 " Add plugins to &runtimepath
 call plug#end()
 
