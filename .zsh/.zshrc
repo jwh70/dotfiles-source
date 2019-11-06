@@ -109,14 +109,19 @@ cprod(){
     pkill -f ssh;
     ssh -fnN db-quorum-dev;
 }
- alias npm-exec='PATH=$(npm bin):$PATH'
- q(){
+ctci(){
+    cd ~/ctci
+    source ../ctci_env/bin/activate
+}
+
+alias npm-exec='PATH=$(npm bin):$PATH'
+q(){
     cd /Users/jackharris/quorum/quorum-site/;
     source ../bin/activate quorum;
     npm-exec
     clear;
 }
- qm(){
+qm(){
     q
     cd QuorumMobile
 }
