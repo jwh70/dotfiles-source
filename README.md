@@ -1,4 +1,4 @@
-## To Start
+## Dotfiles
 ```
 cd ~/
 
