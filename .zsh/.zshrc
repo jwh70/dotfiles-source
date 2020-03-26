@@ -126,16 +126,16 @@ qm(){
     cd QuorumMobile
 }
 sp(){
-    python manage.py shell_plus --run_local --use_prod_aws --print-sql
+    python manage.py shell_plus   --use_prod_aws --print-sql
 }
 psp(){
-    python manage.py shell_plus --run_local --use_prod_db --use_prod_aws --print-sql
+    python manage.py shell_plus   --use_prod_db --use_prod_aws --print-sql
 }
 serve(){
-    python manage.py runserver --run_local --use_prod_aws
+    python manage.py runserver   --use_prod_aws
 }
 servep(){
-    python manage.py runserver --run_local --use_prod_db --use_prod_aws
+    python manage.py runserver   --use_prod_db --use_prod_aws
 }
 dbshell(){
     python manage.py dbshell
