@@ -116,8 +116,8 @@ ctci(){
 
 alias npm-exec='PATH=$(npm bin):$PATH'
 q(){
-    cd /Users/jackharris/quorum/quorum-site/;
-    source ../bin/activate quorum;
+    source /Users/jackharris/quorum_env/bin/activate;
+    cd /Users/jackharris/quorum_env/quorum-site/;
     npm-exec
     clear;
 }
